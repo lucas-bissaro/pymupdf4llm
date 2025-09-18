@@ -630,7 +630,7 @@ def to_markdown(
                 if all_bold:
                     text = "**" + text + "**"
                 if all_underline:
-                    text = "--" + text + "--"
+                    text = "___" + text + "___"
                 if all_strikeout:
                     text = "~~" + text + "~~"
                 if hdr_string != prev_hdr_string:
@@ -703,8 +703,8 @@ def to_markdown(
                     prefix = "_" + prefix
                     suffix += "_"
                 if underline:
-                    prefix = "--" + prefix
-                    suffix += "--"
+                    prefix = "___" + prefix
+                    suffix += "___"
                 if strikeout:
                     prefix = "~~" + prefix
                     suffix += "~~"
